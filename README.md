@@ -1,23 +1,6 @@
-# lsa
-
 ## Overview
 
-This is your new Kedro project, which was generated using `Kedro 0.15.5` by running:
-
-```
-kedro new
-```
-
-Take a look at the [documentation](https://kedro.readthedocs.io) to get started.
-
-## Rules and guidelines
-
-In order to get the best out of the template:
- * Please don't remove any lines from the `.gitignore` file provided
- * Make sure your results can be reproduced by following a data engineering convention, e.g. the one we suggest [here](https://kedro.readthedocs.io/en/latest/06_resources/01_faq.html#what-is-data-engineering-convention)
- * Don't commit any data to your repository
- * Don't commit any credentials or local configuration to your repository
- * Keep all credentials or local configuration in `conf/local/`
+Combining Kedro and MLFlow to managing the Machine Learning lifecycle 
 
 ## Installing dependencies
 
