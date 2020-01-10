@@ -5,4 +5,8 @@
 
 wikitext:
   type: TextLocalDataSet
-  filepath: data/01_raw/wikitext.txt
+  filepath: data/01_raw/text.txt
+
+wikitext_json:
+  type: JSONLocalDataSet
+  filepath: data/02_intermediate/wikitext.json

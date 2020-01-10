@@ -1,6 +1,6 @@
 from typing import Dict
 from kedro.pipeline import Pipeline, node
-from .nodes import jsonify_corpus, export_corpus
+from lsa.pipelines.data_engineering.nodes import jsonify_raw_corpus
 
 def create_pipeline(**kwargs):
     """create the project's pipeline
@@ -11,20 +11,7 @@ def create_pipeline(**kwargs):
     Returns:
         Pipeline object.
     """
-    def pipeline = Pipeline(
-        [
-            node(
-                func=jsonify_corpus
-                inputs="wikitext",
-                outputs="jsonified_corpus"
-                name="jsonify_corpus"
-            ),
-            node(
-                func=export_corpus
-                inputs="jsonified_corpus"
-                outputs="wikitext_json"
-            )
-        ]
-    )
+    node1 = node(func=jsonify_raw_corpus,inputs="wikitext",outputs="wikitext_json",name="jsonify_raw_corpus")
+    de_pipeline = Pipeline([node1])
     return de_pipeline
 
