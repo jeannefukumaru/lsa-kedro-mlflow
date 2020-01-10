@@ -2,7 +2,7 @@
 
 from typing import Dict
 
-from kedro.pipeline import Pipeline
+from kedro.pipeline import Pipeline, node
 from lsa.pipelines import data_engineering as de
 from lsa.pipelines import data_science as ds
 
